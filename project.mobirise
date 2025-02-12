@@ -40,7 +40,7 @@
       ]
     },
     "path": "@PROJECT_PATH@",
-    "name": "Партнеры Свой в Альфе-clone",
+    "name": "Фокус-Группа Гидзап",
     "versionFirst": "5.9.0",
     "siteFonts": [
       {
@@ -58,13 +58,13 @@
     "cssOptimize": true,
     "lazyLoad": true,
     "robotsSwitcher": true,
-    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
     "sitemapSwitcher": true,
-    "siteUrl": "https://partner.alfatemp.ru",
+    "siteUrl": "https://focus.gidzap.ru",
     "sitemapSwitcherAuto": "on",
     "site_lang": "ru",
     "favicon": false,
-    "mbrsiteDomain": "grgz3u9bzq",
+    "mbrsiteDomain": "kiit9hstab",
     "cookiesAlert": false,
     "gdpr": false,
     "witsec-mailform": false
@@ -73,11 +73,12 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Партнерская программа от Альфа Банка",
-        "meta_descr": "Партнеры Альфа Банка, получают ежемесячные выплаты с заказанных продуктов Альфа Банка. Специально для Индивидуальных предпринимателей и ООО.",
+        "title": "Готовый бизнес контрактных автозапчастей",
+        "meta_descr": "Бизнес по продаже контрактных автозапчастей по системе дропшиппинг. Быстрый старт с окупаемостью до 2х месяцев. Обучение и практика вместе с фокус-группой единомышленников. Гарантия получения заказов по договору!",
         "header_custom": "<meta name=\"keywords\" content=\"свой в альфе, альфа банк, проект, партнерская программа для ИП, партнер альфа банка, свой бизнес\">",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/favicon-122x122%20(1)888-122x122.png"
       },
       "components": [
         {
