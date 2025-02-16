@@ -50,7 +50,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 24,
+    "uniqCompNum": 25,
     "versionPublish": "5.9.0",
     "screenshot": "screenshot.png",
     "chatbutton": {},
@@ -64,10 +64,41 @@
     "sitemapSwitcherAuto": "on",
     "site_lang": "ru",
     "favicon": false,
-    "mbrsiteDomain": "kiit9hstab",
+    "mbrsiteDomain": "nuogp4o5pu",
     "cookiesAlert": false,
     "gdpr": false,
-    "witsec-mailform": false
+    "witsec-mailform": true,
+    "witsec-mailform-to": "zakaz@my-car-parts.ru",
+    "witsec-mailform-to-alt": "",
+    "witsec-mailform-from": "zakaz@my-car-parts.ru",
+    "witsec-mailform-from-them": false,
+    "witsec-mailform-from-them-replyto": true,
+    "witsec-mailform-from-name": "my-car-parts.ru",
+    "witsec-mailform-from-name-them": true,
+    "witsec-mailform-from-name-them-field": "{name}",
+    "witsec-mailform-template": "Hi,\n\nYou have received a new message from your website.\n\n{formdata}\n\nDate: {date}\nRemote IP: {ip}\n\n---\nHave a nice day.",
+    "witsec-mailform-dateformat": "F j, Y",
+    "witsec-mailform-timeformat": "g:i a",
+    "witsec-mailform-autorespond-subjectprefix": "Re:",
+    "witsec-mailform-autorespond-subject": "my-car-parts.ru",
+    "witsec-mailform-autorespond-template": "Hi {name},\n\nThank you for your message. We'll get back to you as soon as we can.\nHere's the information you sent us:\n\n{formdata}\n\n---\nHave a nice day.",
+    "witsec-mailform-recaptcha": false,
+    "witsec-mailform-recaptcha-version": "3",
+    "witsec-mailform-recaptcha-sitekey": "",
+    "witsec-mailform-recaptcha-secretkey": "",
+    "witsec-mailform-recaptcha-score": "0.5",
+    "witsec-mailform-disable-button": false,
+    "witsec-mailform-smtp": false,
+    "witsec-mailform-smtp-debug": false,
+    "witsec-mailform-smtp-host": "",
+    "witsec-mailform-smtp-port": "",
+    "witsec-mailform-smtp-secure": "",
+    "witsec-mailform-smtp-username": "",
+    "witsec-mailform-smtp-password": "",
+    "witsec-mailform-attachments-mimetypes": "application/gzip\napplication/java-archive\napplication/json\napplication/ld+json\napplication/msword\napplication/ogg\napplication/pdf\napplication/rtf\napplication/vnd.amazon.ebook\napplication/vnd.api+json\napplication/vnd.apple.installer+xml\napplication/vnd.mozilla.xul+xml\napplication/vnd.ms-excel\napplication/vnd.ms-fontobject\napplication/vnd.ms-powerpoint\napplication/vnd.oasis.opendocument.presentation\napplication/vnd.oasis.opendocument.spreadsheet\napplication/vnd.oasis.opendocument.text\napplication/vnd.openxmlformats-officedocument.presentationml.presentation\napplication/vnd.openxmlformats-officedocument.spreadsheetml.sheet\napplication/vnd.openxmlformats-officedocument.wordprocessingml.document\napplication/vnd.rar\napplication/vnd.visio\napplication/x-7z-compressed\napplication/x-abiword\napplication/x-bzip\napplication/x-bzip2\napplication/x-freearc\napplication/x-httpd-php\napplication/x-tar\napplication/x-www-form-urlencoded\napplication/xhtml+xml\napplication/xml\napplication/zip\napplication/zstd\naudio/*\nfont/*\nimage/*\nmultipart/form-data\ntext/plain\ntext/calendar\ntext/css\ntext/csv\ntext/rtf\nvideo/*",
+    "witsec-mailform-attachments-extensions": "avi\nbmp\ncer\ncfg\ncss\ncsv\ncur\ndoc\ndocx\neml\nemlx\nfnt\nfon\ngif\nh264\nico\nini\njpeg\njpg\nkey\nlog\nmid\nmkv\nmov\nmp3\nmp4\nmpa\nmpeg\nmpg\nmsg\nodp\nods\nodt\nogg\notf\npdf\npng\npps\nppt\npptx\nps\npsd\nrss\nrtf\nsvg\ntif\ntiff\nttf\ntxt\nvcf\nwav\nwebm\nwebp\nwma\nwmv\nwpd\nxls\nxlsx",
+    "witsec-mailform-allowedhtml": "b,br,i,p,u",
+    "witsec-mailform-recaptcha-hidebadge": false
   },
   "pages": {
     "index.html": {
@@ -1509,6 +1540,91 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": "witsec-mailform/components",
+          "_isSecondary": true,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".showAlerts": {
+              "display": "block !important"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".form-control": {
+              "padding-left": "1.5rem",
+              "padding-right": "1.5rem"
+            },
+            ".input-group-btn .btn": {
+              "margin": "0 !important"
+            },
+            "a:not([href]):not([tabindex])": {
+              "color": "#fff"
+            },
+            "a.btn-white:not([href]):not([tabindex])": {
+              "color": "#333"
+            },
+            "@media (max-width: 768px)": {
+              ".mbr-form .row": {
+                "-webkit-flex-direction": "column",
+                "flex-direction": "column",
+                "-webkit-align-items": "center",
+                "align-items": "center"
+              },
+              ".form-group, .input-group-btn, .input-group-btn .btn": {
+                "max-width": "300px",
+                "width": "100%"
+              },
+              ".rcpContainer": {
+                "margin-top": "1rem !important"
+              }
+            },
+            ".mbr-section-terms": {
+              "text-align": "center",
+              "margin-bottom": "0px"
+            },
+            ".alert": {
+              "margin-bottom": "0"
+            },
+            ".alert-success": {
+              "background-color": "@bgColorSuccess"
+            },
+            ".alert-danger": {
+              "background-color": "@bgColorError"
+            },
+            ".rcpContainer": {
+              "width": "304px",
+              "margin": "0 auto"
+            },
+            ".mbr-alert-success": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            ".mbr-alert-danger": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            "input, option, textarea": {
+              "color": "@inputColor"
+            }
+          },
+          "_name": "witsec-mailform-newsletter",
+          "_sourceTheme": "claimm4",
+          "_customHTML": "<section class=\"witsec-mailform mbr-section form3\" plugins=\"witsec-mailform\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n  <mbr-parameters>\n  <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Global settings can be changed in the <a href=\"#\" onclick=\"$('.projects-show').click()\">Site Settings</a> of your website</header>\n\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Show reCAPTCHA Terms\" name=\"showTerms\">\n\n    <header>Placeholders</header>\n    <input type=\"text\" title=\"Email\" name=\"txtEmailPlaceholder\" value=\"Email\">\n\n    <header>Form Options</header>\n    <input type=\"text\" title=\"Alternative Recipient (use Address Book ID as defined in Site Settings)\" name=\"recipientID\" value>\n    <input type=\"text\" title=\"Subject\" name=\"txtSubject\" value=\"A message from your website.\">\n    <select title=\"Autorespond\" name=\"autorespond\">\n      <option value=\"0\" selected>Off</option>\n      <option value=\"1\">On</option>\n    </select>\n    <select title=\"On Success\" name=\"onsuccess\">\n      <option value=\"0\" selected>Stay</option>\n      <option value=\"1\">Redirect</option>\n    </select>\n    <input type=\"checkbox\" title=\"Confirmation Below Form\" name=\"confirmationBelow\">\n    <input type=\"color\" title=\"Input Text Color\" name=\"inputColor\" value=\"#000000\">\n\n    <header condition=\"onsuccess == 1\">RedirectURL</header>\n    <input type=\"text\" title=\"Redirect to\" name=\"redirectURL\" value=\"thanks.html\" condition=\"onsuccess == 1\">\n\n    <header>Mini Templates (optional)</header>\n    <textarea name=\"mtxt\" title=\"Normal Mail\"></textarea>\n    <textarea name=\"rtxt\" title=\"Response Mail\" condition=\"autorespond > 0\"></textarea>\n\n    <header>Alerts</header>\n    <input type=\"checkbox\" title=\"Show Alerts in Mobirise\" name=\"showAlerts\" checked>\n    <input type=\"color\" title=\"Success BG Color\" name=\"bgColorSuccess\" value=\"#70c770\" condition=\"onsuccess == 0\">\n    <input type=\"color\" title=\"Error BG Color\" name=\"bgColorError\" value=\"#ff4a52\">\n\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n        <input type=\"image\" title=\"Background Image\" value=\"../_images/background.jpg\" parallax>\n        <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n    </fieldset>\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  <!-- End block parameters -->\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n  </div>\n\n  <div class=\"container\">\n    <div class=\"row justify-content-center\">\n      <div class=\"title col-12 col-lg-8\">\n        <h2 mbr-if=\"showTitle\" class=\"align-center pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n          SUBSCRIBE FORM\n        </h2>\n        <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n          Subscribe to our Newsletter\n        </h3>\n      </div>\n    </div>\n\n    <div class=\"row py-2 justify-content-center\">\n      <div class=\"col-12 col-lg-6  col-md-8 \">\n        <form class=\"mbr-form\">\n          <input type=\"hidden\" name=\"recipient\" value=\"{{recipientID}}\" mbr-if=\"recipientID\">\n          <input type=\"hidden\" name=\"subject\" value=\"{{txtSubject}}\">\n          <input type=\"hidden\" name=\"redirectURL\" value=\"{{redirectURL}}\" mbr-if=\"onsuccess=='1'\">\n          <input type=\"hidden\" name=\"autorespond\" value=\"1\" mbr-if=\"autorespond=='1'\">\n          <input type=\"hidden\" name=\"mtxt\" value=\"{{mtxt}}\" mbr-if=\"mtxt\">\n          <input type=\"hidden\" name=\"rtxt\" value=\"{{rtxt}}\" mbr-if=\"rtxt &amp;&amp; autorespond > 0\">\n\n          <div class=\"row\" mbr-class=\"{ 'flex-column': !confirmationBelow, 'flex-column-reverse': confirmationBelow }\">\n            <div class=\"row\">\n              <div class=\"col-md-12 form-group\">\n                <div hidden=\"hidden\" mbr-text class=\"alert alert-success col-12 mbr-alert-success mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-class=\"{showAlerts: !isPublish && showAlerts}\" data-app-edit=\"content\" data-app-selector=\".mbr-alert-success\">Thanks for filling out the form!</div>\n                <div hidden=\"hidden\" mbr-text class=\"alert alert-danger col-12 mbr-alert-danger mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-class=\"{showAlerts: !isPublish && showAlerts}\" data-app-edit=\"content\" data-app-selector=\".mbr-alert-danger\">An error occurred. Please try again.</div>\n              </div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"form-group col\" data-for=\"email\">\n                <input type=\"email\" name=\"email\" placeholder=\"{{txtEmailPlaceholder}}\" data-form-field=\"Email\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\">\n              </div>\n              <div class=\"col-auto input-group-btn \" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrBtnLink,-mbrBtnAdd\"><a type=\"submit\" class=\"btn btn-primary btn-form\" data-app-placeholder=\"Type Text\">SUBSCRIBE</a></div>\n            </div>\n          </div>\n\n          <div class=\"rcpContainer\" mbr-class=\"{'d-none': !isPublish}\"><div class=\"g-recaptcha\"></div></div>\n        </form>\n      </div>\n      <div mbr-if=\"showTerms\" class=\"col-md-12 justify-content-center form-group\">\n        <p class=\"mbr-section-terms mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-html=\"terms\" data-app-edit=\"content\" data-app-selector=\".mbr-section-terms\">\n          This form uses Google's reCAPTCHA. By continuing you agree to the <a href=\"https://policies.google.com/privacy\" target=\"_blank\">Privacy</a> and <a href=\"https://policies.google.com/terms\" target=\"_blank\">Terms</a>.\n        </p>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uCZzb7b4Xa",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "witsec-mailform-newsletter-o"
         },
         {
           "alias": false,
